@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users-list>
+    <user>
+        <username>admin</username>
+        <password>adminadmin</password>
+        <firstName>Mr</firstName>
+        <lastName>Admin</lastName>
+    </user>
+    <user>
+        <username>userA</username>
+        <password>userAuserA</password>
+        <firstName>User</firstName>
+        <lastName>A</lastName>
+    </user>
+</users-list>

@@ -1,0 +1,29 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <display-name>Library Catalog</display-name>
+
+    <servlet>
+        <servlet-name>AuthHandler</servlet-name>
+        <servlet-class>servlet.AuthHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthHandler</servlet-name>
+        <url-pattern>/AuthHandler</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <security-constraint>
+        <display-name>Restrict access to JSPs</display-name>
+        <web-resource-collection>
+            <web-resource-name>Restrict access to jsps</web-resource-name>
+            <url-pattern>/hidden/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<books-list>
+    <book>
+        <name>BOOK !</name>
+        <author>Jonny Smith</author>
+        <publisher>FRUITY BOOKS</publisher>
+        <publishingYear>1999</publishingYear>
+        <available>false</available>
+    </book>
+
+    <book>
+        <name>BOOK #2</name>
+        <author>Jonny Smith</author>
+        <publisher>LAWN BOOKS</publisher>
+        <publishingYear>2009</publishingYear>
+        <available>true</available>
+    </book>
+
+    <book>
+        <name>BOOK #3</name>
+        <author>Maggie Smitters</author>
+        <publisher>LAWN BOOKS</publisher>
+        <publishingYear>2010</publishingYear>
+        <available>true</available>
+    </book>
+</books-list>

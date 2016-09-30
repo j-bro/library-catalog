@@ -10,24 +10,22 @@ import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
 import com.bmuschko.gradle.docker.tasks.container.*
 import com.bmuschko.gradle.docker.tasks.image.*
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
     // https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa
     compile group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.jpa', version: '2.6.4'
 
-    // https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.moxy
-    compile group: 'org.eclipse.persistence', name: 'org.eclipse.persistence.moxy', version: '2.5.0'
-
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-}
+    // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'
 
 
-dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
@@ -82,4 +80,8 @@ task createContainer(type: DockerCreateContainer) {
 task startContainer(type: DockerStartContainer) {
     dependsOn createContainer
     targetContainerId { createContainer.getContainerId() }
+}
+
+task stopContainer(type: DockerStopContainer) {
+    targetContainerId {createContainer.getContainerId() }
 }
