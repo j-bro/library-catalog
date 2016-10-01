@@ -1,16 +1,24 @@
 package models;
 
 import javax.xml.bind.annotation.XmlType;
-import java.time.Year;
 
-@XmlType(propOrder = { "name", "author", "publisher", "publishingYear", "available"})
+@XmlType(propOrder = { "id", "name", "author", "publisher", "publishingYear", "available"})
 public class Book {
 
+    private long id;
     private String name;
     private String author;
     private String publisher;
     private String publishingYear;
     private boolean available;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

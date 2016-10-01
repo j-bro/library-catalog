@@ -8,18 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <% if (request.getSession().getAttribute("sessionUser") == null) {
     response.sendRedirect("../login.jsp");
-}
-%>
+}%>
 <html>
 <head>
     <title>Search Catalog</title>
 </head>
 <body>
-    <% Map<String, String[]> params = request.getParameterMap(); %>
-    <% if (params.get("query") == null && params.get("queryType") == null) { %>
     <%@include file="../hidden/search-query.jsp"%>
-    <% } else {%>
-    <%@include file="../hidden/search-results.jsp"%>
+
+    <% Map<String, String[]> params = request.getParameterMap(); %>
+    <% if (params.get("query") != null && params.get("queryType") != null) { %>
+        <%@include file="../hidden/search-results.jsp"%>
     <% } %>
 </body>
 </html>

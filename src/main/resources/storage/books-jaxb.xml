@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <books-list>
     <book>
+        <id>1</id>
         <name>BOOK !</name>
         <author>Jonny Smith</author>
         <publisher>FRUITY BOOKS</publisher>
@@ -9,6 +10,7 @@
     </book>
 
     <book>
+        <id>2</id>
         <name>BOOK #2</name>
         <author>Jonny Smith</author>
         <publisher>LAWN BOOKS</publisher>
@@ -17,6 +19,7 @@
     </book>
 
     <book>
+        <id>3</id>
         <name>BOOK #3</name>
         <author>Maggie Smitters</author>
         <publisher>LAWN BOOKS</publisher>

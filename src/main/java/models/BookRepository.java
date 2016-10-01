@@ -38,18 +38,21 @@ public class BookRepository {
         return books;
     }
 
-    public static List<Book> getBookByName(String name) throws BookNotFoundException {
-        return getFilteredBookList(book -> name.equals(book.getName()));
-        // TODO implement fuzzy search
-    }
-
-    public static List<Book> getBooksByAuthor(String author) throws BookNotFoundException {
-        return getFilteredBookList(book -> author.equals(book.getAuthor()));
-    }
-
     private static List<Book> getFilteredBookList(Predicate<Book> predicate) {
         List<Book> books = getBookList();
         return books.stream().filter(predicate).collect(Collectors.toList());
+    }
+
+    public static Optional<Book> getBookById(long bookId) {
+        return getFilteredBookList(book -> book.getId() == bookId).stream().findFirst();
+    }
+
+    public static List<Book> getBooksByName(String name) {
+        return getFilteredBookList(book -> book.getName().contains(name));
+    }
+
+    public static List<Book> getBooksByAuthor(String author) {
+        return getFilteredBookList(book -> author.equals(book.getAuthor()));
     }
 
     public static void storeBook(Book book) throws JAXBException, IOException {
