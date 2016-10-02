@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
@@ -39,8 +38,7 @@ public class BookRepository {
     }
 
     private static List<Book> getFilteredBookList(Predicate<Book> predicate) {
-        List<Book> books = getBookList();
-        return books.stream().filter(predicate).collect(Collectors.toList());
+        return getBookList().stream().filter(predicate).collect(Collectors.toList());
     }
 
     public static Optional<Book> getBookById(long bookId) {
@@ -48,11 +46,15 @@ public class BookRepository {
     }
 
     public static List<Book> getBooksByName(String name) {
-        return getFilteredBookList(book -> book.getName().contains(name));
+        return getFilteredBookList(book -> book.getName().toLowerCase().contains(name.toLowerCase()));
     }
 
     public static List<Book> getBooksByAuthor(String author) {
-        return getFilteredBookList(book -> author.equals(book.getAuthor()));
+        return getFilteredBookList(book -> author.equalsIgnoreCase(book.getAuthor()));
+    }
+
+    public static List<Book> getBooksBySubject(String subject) {
+        return getFilteredBookList(book -> book.getSubjects().stream().anyMatch(s -> s.equalsIgnoreCase(subject)));
     }
 
     public static void storeBook(Book book) throws JAXBException, IOException {

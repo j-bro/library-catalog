@@ -12,13 +12,25 @@
 <html>
 <head>
     <title>Search Catalog</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../res/materialize/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="../res/materialize/js/materialize.min.js"></script>
+
 </head>
 <body>
-    <%@include file="../hidden/search-query.jsp"%>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <h1>Search Catalog</h1>
+                <%@include file="../hidden/search-query.jsp"%>
 
-    <% Map<String, String[]> params = request.getParameterMap(); %>
-    <% if (params.get("query") != null && params.get("queryType") != null) { %>
-        <%@include file="../hidden/search-results.jsp"%>
-    <% } %>
+                <% Map<String, String[]> params = request.getParameterMap(); %>
+                <% if (params.get("query") != null && params.get("queryType") != null) { %>
+                    <%@include file="../hidden/search-results.jsp"%>
+                <% } %>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

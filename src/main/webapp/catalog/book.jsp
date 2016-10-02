@@ -14,6 +14,11 @@
 <html>
 <head>
     <title>Book</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../res/materialize/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="../res/materialize/js/materialize.min.js"></script>
+
 </head>
 <body>
     <%
@@ -32,9 +37,13 @@
     <h1><%= book.getName() %></h1>
     <h3>Author: <%= book.getAuthor() %></h3>
     <h4>Available: <%= book.isAvailable() %></h4>
+    <h4>Publisher: <%= book.getPublisher() %></h4>
+    <h4>Publishing Year: <%= book.getPublishingYear() %></h4>
+    <h4>Subjects</h4>
     <ul>
-        <li>Publisher: <%= book.getPublisher() %></li>
-        <li>Publishing Year: <%= book.getPublishingYear() %></li>
+        <% for (String subject : book.getSubjects()) { %>
+        <%= subject %>
+        <% } %>
     </ul>
     <% } else {
     %>

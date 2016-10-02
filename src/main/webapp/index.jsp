@@ -9,6 +9,11 @@
 <html>
   <head>
     <title>$Title$</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="res/materialize/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="res/materialize/js/materialize.min.js"></script>
+
   </head>
   <body>
   HELLO, JSP!

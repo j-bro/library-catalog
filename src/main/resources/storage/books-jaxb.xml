@@ -4,6 +4,9 @@
         <id>1</id>
         <name>BOOK !</name>
         <author>Jonny Smith</author>
+        <subjects>reading</subjects>
+        <subjects>talking</subjects>
+        <subjects>eating</subjects>
         <publisher>FRUITY BOOKS</publisher>
         <publishingYear>1999</publishingYear>
         <available>false</available>
@@ -13,6 +16,8 @@
         <id>2</id>
         <name>BOOK #2</name>
         <author>Jonny Smith</author>
+        <subjects>talking</subjects>
+        <subjects>eating</subjects>
         <publisher>LAWN BOOKS</publisher>
         <publishingYear>2009</publishingYear>
         <available>true</available>
@@ -22,6 +27,7 @@
         <id>3</id>
         <name>BOOK #3</name>
         <author>Maggie Smitters</author>
+        <subjects>reading</subjects>
         <publisher>LAWN BOOKS</publisher>
         <publishingYear>2010</publishingYear>
         <available>true</available>

@@ -11,6 +11,8 @@
         books = BookRepository.getBooksByName(queryString);
     } else if (queryType.equals("author")) {
         books = BookRepository.getBooksByAuthor(queryString);
+    } else if (queryType.equals("subject")) {
+        books = BookRepository.getBooksBySubject(queryString);
     }
 %>
 <h4>Query: "<%= queryString %>" in <%= queryType %></h4>

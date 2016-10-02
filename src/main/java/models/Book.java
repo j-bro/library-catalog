@@ -1,13 +1,15 @@
 package models;
 
 import javax.xml.bind.annotation.XmlType;
+import java.util.List;
 
-@XmlType(propOrder = { "id", "name", "author", "publisher", "publishingYear", "available"})
+@XmlType(propOrder = { "id", "name", "author", "subjects", "publisher", "publishingYear", "available"})
 public class Book {
 
     private long id;
     private String name;
     private String author;
+    private List<String> subjects;
     private String publisher;
     private String publishingYear;
     private boolean available;
@@ -42,6 +44,14 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public List<String> getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(List<String> subjects) {
+        this.subjects = subjects;
     }
 
     public String getPublisher() {
