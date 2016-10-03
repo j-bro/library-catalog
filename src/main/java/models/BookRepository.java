@@ -50,11 +50,24 @@ public class BookRepository {
     }
 
     public static List<Book> getBooksByAuthor(String author) {
-        return getFilteredBookList(book -> author.equalsIgnoreCase(book.getAuthor()));
+        return getFilteredBookList(book -> book.getAuthor().toLowerCase().contains(author.toLowerCase()));
     }
 
     public static List<Book> getBooksBySubject(String subject) {
         return getFilteredBookList(book -> book.getSubjects().stream().anyMatch(s -> s.equalsIgnoreCase(subject)));
+    }
+
+    public static List<Book> getBooksByPublisher(String publisher) {
+        return getFilteredBookList(book -> book.getPublisher().toLowerCase().contains(publisher.toLowerCase()));
+    }
+
+    public static List<Book> getBooksByPublishedYear(String year) {
+        return getFilteredBookList(book -> year.equals(book.getPublishingYear()));
+    }
+
+    public static List<Book> getBooksByIsbn(String isbn) {
+        String strippedIsbn = isbn.replace("-", "").replace(" ", "");
+        return getFilteredBookList(book -> strippedIsbn.equals(book.getIsbn10()) || strippedIsbn.equals(book.getIsbn13()));
     }
 
     public static void storeBook(Book book) throws JAXBException, IOException {

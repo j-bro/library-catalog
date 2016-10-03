@@ -9,25 +9,36 @@
 <html>
 <head>
     <title>Login</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="res/materialize/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="res/materialize/js/materialize.min.js"></script>
-
+    <%@include file="hidden/header-imports.jsp"%>
 </head>
 <body>
+    <%@include file="hidden/navbar.jsp"%>
     <div class="container">
         <div class="row">
             <div class="col s12 m6 offset-m3">
-                <h1>Login</h1>
+                <h2>Login</h2>
 
-                <form method="post" action="AuthHandler">
-                    Username :<input type="text" name="user" /><br/><br/>
-                    Password :<input type="password" name="pass" /><br/><br/>
-                    <input type="submit" value="Login" />
+                <form method="post" action="login">
+                    <div class="row">
+                        <div class="input-field">
+                            <input placeholder="Username" id="user" type="text" name="user" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input placeholder="Password" id="pass" type="password" name="pass" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <button class="waves-effect waves-light btn-large" type="submit">Login</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <%@include file="hidden/footer.jsp"%>
 </body>
 </html>

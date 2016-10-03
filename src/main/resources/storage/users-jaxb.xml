@@ -12,4 +12,10 @@
         <firstName>User</firstName>
         <lastName>A</lastName>
     </user>
+    <user>
+        <username>userB</username>
+        <password>userBuserB</password>
+        <firstName>User</firstName>
+        <lastName>B</lastName>
+    </user>
 </users-list>

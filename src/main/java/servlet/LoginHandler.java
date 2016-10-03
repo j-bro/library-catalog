@@ -11,7 +11,7 @@ import models.UserRepository;
 /**
  * Created by jeremybrown on 2016-09-30.
  */
-public class AuthHandler extends HttpServlet {
+public class LoginHandler extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {

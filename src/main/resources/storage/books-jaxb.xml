@@ -2,34 +2,193 @@
 <books-list>
     <book>
         <id>1</id>
-        <name>BOOK !</name>
-        <author>Jonny Smith</author>
-        <subjects>reading</subjects>
-        <subjects>talking</subjects>
-        <subjects>eating</subjects>
-        <publisher>FRUITY BOOKS</publisher>
-        <publishingYear>1999</publishingYear>
-        <available>false</available>
+        <name>To Kill a Mockingbird</name>
+        <author>Harper Lee</author>
+        <description>
+            The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.
+
+            Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior—to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.
+
+            (from GoodReads: https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird)
+        </description>
+        <subjects>race</subjects>
+        <subjects>racial inequality</subjects>
+        <subjects>rape</subjects>
+        <subjects>united states of america</subjects>
+        <subjects>fiction</subjects>
+        <publisher>J. B. Lippincott Company</publisher>
+        <publishingYear>1960</publishingYear>
+        <isbn10>0061120081</isbn10>
+        <isbn13>9780061120084</isbn13>
+        <available>true</available>
     </book>
 
     <book>
         <id>2</id>
-        <name>BOOK #2</name>
-        <author>Jonny Smith</author>
-        <subjects>talking</subjects>
-        <subjects>eating</subjects>
-        <publisher>LAWN BOOKS</publisher>
-        <publishingYear>2009</publishingYear>
+        <name>Silent Spring</name>
+        <author>Rachel Carson</author>
+        <description>
+            Rachel Carson’s Silent Spring was first published in three serialized excerpts in the New Yorker in June of 1962. The book appeared in September of that year and the outcry that followed its publication forced the banning of DDT and spurred revolutionary changes in the laws affecting our air, land, and water. Carson’s passionate concern for the future of our planet reverberated powerfully throughout the world, and her eloquent book was instrumental in launching the environmental movement. It is without question one of the landmark books of the twentieth century. (less)
+
+            (from GoodReads: https://www.goodreads.com/book/show/27333.Silent_Spring)
+        </description>
+        <subjects>pesticides</subjects>
+        <subjects>ecology</subjects>
+        <subjects>environmentalism</subjects>
+        <publisher>Houghton Mifflin Harcourt</publisher>
+        <publishingYear>1962</publishingYear>
+        <isbn10>0618249060</isbn10>
+        <isbn13>9780618249060</isbn13>
         <available>true</available>
     </book>
 
     <book>
         <id>3</id>
-        <name>BOOK #3</name>
-        <author>Maggie Smitters</author>
-        <subjects>reading</subjects>
-        <publisher>LAWN BOOKS</publisher>
-        <publishingYear>2010</publishingYear>
+        <name>1984</name>
+        <author>George Orwell</author>
+        <description>
+            The year 1984 has come and gone, but George Orwell's prophetic, nightmarish vision in 1949 of the world we were becoming is timelier than ever. 1984 is still the great modern classic of "negative utopia" -a startlingly original and haunting novel that creates an imaginary world that is completely convincing, from the first sentence to the last four words. No one can deny the novel's hold on the imaginations of whole generations, or the power of its admonitions -a power that seems to grow, not lessen, with the passage of time.
+
+            (from GoodReads: https://www.goodreads.com/book/show/5470.1984)
+        </description>
+        <subjects>dystopia</subjects>
+        <subjects>surveillance</subjects>
+        <subjects>authority</subjects>
+        <subjects>nationalism</subjects>
+        <publisher>Harvill Secker</publisher>
+        <publishingYear>1949</publishingYear>
+        <isbn10>0451524934</isbn10>
+        <isbn13>9780451524935</isbn13>
+        <available>false</available>
+    </book>
+
+    <book>
+        <id>4</id>
+        <name>Steve Jobs</name>
+        <author>Walter Isaacson</author>
+        <description>
+            From best-selling author Walter Isaacson comes the landmark biography of Apple co-founder Steve Jobs.
+
+            In Steve Jobs: The Exclusive Biography, Isaacson provides an extraordinary account of Jobs' professional and personal life. Drawn from three years of exclusive and unprecedented interviews Isaacson has conducted with Jobs as well as extensive interviews with Jobs' family members and key colleagues from Apple and its competitors, Steve Jobs: The Exclusive Biography is the definitive portrait of the greatest innovator of his generation.
+
+            (from GoodReads: https://www.goodreads.com/book/show/11084145-steve-jobs)
+        </description>
+        <subjects>steve jobs</subjects>
+        <subjects>apple</subjects>
+        <subjects>biography</subjects>
+        <publisher>Simon &amp; Schuster</publisher>
+        <publishingYear>2011</publishingYear>
+        <isbn10>1451648537</isbn10>
+        <isbn13>9781451648539</isbn13>
+        <available>false</available>
+    </book>
+
+    <book>
+        <id>5</id>
+        <name>The Diary of a Young Girl</name>
+        <author>Anne Frank</author>
+        <description>
+            Discovered in the attic in which she spent the last years of her life, Anne Frank's remarkable diary has since become a world classic—a powerful reminder of the horrors of war and an eloquent testament to the human spirit.
+
+            In 1942, with Nazis occupying Holland, a thirteen-year-old Jewish girl and her family fled their home in Amsterdam and went into hiding. For the next two years, until their whereabouts were betrayed to the Gestapo, they and another family lived cloistered in the "Secret Annexe" of an old office building. Cut off from the outside world, they faced hunger, boredom, the constant cruelties of living in confined quarters, and the ever-present threat of discovery and death.
+
+            In her diary Anne Frank recorded vivid impressions of her experiences during this period. By turns thoughtful, moving, and amusing, her account offers a fascinating commentary on human courage and frailty and a compelling self-portrait of a sensitive and spirited young woman whose promise was tragically cut short.
+
+            (from GoodReads: https://www.goodreads.com/book/show/48855.The_Diary_of_a_Young_Girl)
+        </description>
+        <subjects>world war ii</subjects>
+        <subjects>anne frank</subjects>
+        <subjects>nazis</subjects>
+        <subjects>concentration camps</subjects>
+        <subjects>jewish</subjects>
+        <subjects>biography</subjects>
+        <publisher>Bantam</publisher>
+        <publishingYear>1993</publishingYear>
+        <isbn10>0553296981</isbn10>
+        <isbn13>9780553296983</isbn13>
+        <available>true</available>
+    </book>
+
+    <book>
+        <id>6</id>
+        <name>Animal Farm</name>
+        <author>George Orwell</author>
+        <description>
+            "All animals are equal but some animals are more equal than others."
+
+            Revolution is in the air at Manor Farm after old Major, a prize boar, tells the other animals about his dream of freedom and teaches them to sing "Beasts of England." Mr Jones, the drunken farmer, is deposed and a committee of pigs takes over the running of the farm. The animals are taught to read and write, but the dream turns sour, the purges begin and those in charge come more and more to resemble their oppressors.
+
+            Orwell's allegory of the Soviet revolution remains as lucid and compelling as ever. In beautifully clear prose, he gives us a vivid gallery of characters and a fable that conveys the truth about how we are manipulated through language and the impossibility of finding heaven on earth.
+
+            (from GoodReads: https://www.goodreads.com/book/show/7613.Animal_Farm)
+        </description>
+        <subjects>farm</subjects>
+        <subjects>fiction</subjects>
+        <subjects>freedom</subjects>
+        <subjects>revolution</subjects>
+        <subjects>soviet</subjects>
+        <publisher>NAL</publisher>
+        <publishingYear>1945</publishingYear>
+        <isbn10>0452284244</isbn10>
+        <isbn13>9780452284241</isbn13>
+        <available>true</available>
+    </book>
+
+    <book>
+        <id>7</id>
+        <name>Hard Choices</name>
+        <author>Hillary Rodham Clinton</author>
+        <description>
+            Hillary Rodham Clinton’s inside account of the crises, choices, and challenges she faced during her four years as America’s 67th Secretary of State, and how those experiences drive her view of the future.
+
+            “All of us face hard choices in our lives,” Hillary Rodham Clinton writes at the start of this personal chronicle of years at the center of world events. “Life is about making such choices. Our choices and how we handle them shape the people we become.”
+
+            In the aftermath of her 2008 presidential run, she expected to return to representing New York in the United States Senate. To her surprise, her former rival for the Democratic Party nomination, newly elected President Barack Obama, asked her to serve in his administration as Secretary of State. This memoir is the story of the four extraordinary and historic years that followed, and the hard choices that she and her colleagues confronted.
+
+            Secretary Clinton and President Obama had to decide how to repair fractured alliances, wind down two wars, and address a global financial crisis. They faced a rising competitor in China, growing threats from Iran and North Korea, and revolutions across the Middle East. Along the way, they grappled with some of the toughest dilemmas of US foreign policy, especially the decision to send Americans into harm’s way, from Afghanistan to Libya to the hunt for Osama bin Laden.
+
+            By the end of her tenure, Secretary Clinton had visited 112 countries, traveled nearly one million miles, and gained a truly global perspective on many of the major trends reshaping the landscape of the twenty-first century, from economic inequality to climate change to revolutions in energy, communications, and health. Drawing on conversations with numerous leaders and experts, Secretary Clinton offers her views on what it will take for the United States to compete and thrive in an interdependent world. She makes a passionate case for human rights and the full participation in society of women, youth, and LGBT people. An astute eyewitness to decades of social change, she distinguishes the trendlines from the headlines and describes the progress occurring throughout the world, day after day.
+
+            Secretary Clinton’s descriptions of diplomatic conversations at the highest levels offer readers a master class in international relations, as does her analysis of how we can best use “smart power” to deliver security and prosperity in a rapidly changing world—one in which America remains the indispensable nation.
+
+            (from GoodReads: https://www.goodreads.com/book/show/17727276-hard-choices)
+        </description>
+        <subjects>biography</subjects>
+        <subjects>clinton</subjects>
+        <subjects>united states of america</subjects>
+        <subjects>government</subjects>
+        <subjects>secretary of state</subjects>
+        <publisher>Simon &amp; Schuster</publisher>
+        <publishingYear>2014</publishingYear>
+        <isbn10>1476751447</isbn10>
+        <isbn13>9781476751443</isbn13>
+        <available>false</available>
+    </book>
+
+    <book>
+        <id>8</id>
+        <name>Einstein: His Life and Universe</name>
+        <author>Walter Isaacson</author>
+        <description>
+            By the author of the acclaimed bestsellers Benjamin Franklin and Steve Jobs, this is the definitive biography of Albert Einstein.
+
+            How did his mind work? What made him a genius? Isaacson’s biography shows how his scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom.
+
+            Based on newly released personal letters of Einstein, this book explores how an imaginative, impertinent patent clerk—a struggling father in a difficult marriage who couldn’t get a teaching job or a doctorate—became the mind reader of the creator of the cosmos, the locksmith of the mysteries of the atom, and the universe. His success came from questioning conventional wisdom and marveling at mysteries that struck others as mundane. This led him to embrace a morality and politics based on respect for free minds, free spirits, and free individuals.
+
+            These traits are just as vital for this new century of globalization, in which our success will depend on our creativity, as they were for the beginning of the last century, when Einstein helped usher in the modern age.
+
+            (from GoodReads: https://www.goodreads.com/book/show/10884.Einstein?ac=1)
+        </description>
+        <subjects>biography</subjects>
+        <subjects>einstein</subjects>
+        <subjects>science</subjects>
+        <subjects>genius</subjects>
+        <subjects>creativity</subjects>
+        <publisher>Simon &amp; Schuster</publisher>
+        <publishingYear>2007</publishingYear>
+        <isbn10>0743264738</isbn10>
+        <isbn13>9780743264730</isbn13>
         <available>true</available>
     </book>
 </books-list>

@@ -3,7 +3,8 @@ import models.BookRepository;
 import models.User;
 import models.UserRepository;
 
-import java.time.Year;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jeremybrown on 2016-09-30.
@@ -30,6 +31,10 @@ public class Test {
         b.setName("BOOK !");
         b.setAuthor("Jonny Smith");
         b.setPublisher("FRUITY BOOKS");
+        List<String> subjects = new ArrayList<>();
+        subjects.add("eating");
+        subjects.add("drawing");
+        b.setSubjects(subjects);
         b.setPublishingYear("1999");
         b.setAvailable(false);
 

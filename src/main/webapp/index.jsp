@@ -8,15 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="res/materialize/css/materialize.min.css">
-      <!-- Compiled and minified JavaScript -->
-      <script src="res/materialize/js/materialize.min.js"></script>
-
   </head>
   <body>
-  HELLO, JSP!
-
+  <%
+      response.sendRedirect("catalog/search.jsp");
+  %>
   </body>
 </html>
