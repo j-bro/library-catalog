@@ -26,7 +26,7 @@ public class BookRepository {
         return (BookList) um.unmarshal(new FileReader(BOOK_XML));
     }
 
-    private static List<Book> getBookList() {
+    public static List<Book> getBookList() {
         List<Book> books = null;
         try {
             books = fetchBookList().getBooks();
@@ -37,7 +37,7 @@ public class BookRepository {
         return books;
     }
 
-    private static List<Book> getFilteredBookList(Predicate<Book> predicate) {
+    public static List<Book> getFilteredBookList(Predicate<Book> predicate) {
         return getBookList().stream().filter(predicate).collect(Collectors.toList());
     }
 

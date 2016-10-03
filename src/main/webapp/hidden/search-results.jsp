@@ -8,7 +8,9 @@
             String queryType = request.getParameter("queryType");
             String queryString = request.getParameter("query");
             List<Book> books = null;
-            if (queryType.equals("name")) {
+            if (queryString.isEmpty()) {
+                books = BookRepository.getBookList();
+            } else if (queryType.equals("name")) {
                 books = BookRepository.getBooksByName(queryString);
             } else if (queryType.equals("author")) {
                 books = BookRepository.getBooksByAuthor(queryString);
@@ -25,9 +27,9 @@
         <div class="section">
             <h2>Search Results</h2>
             <% if (queryString.isEmpty()) { %>
-                <h4>Empty query, showing all results.</h4>
+                <h5>Empty query, showing all results.</h5>
             <% } else { %>
-                <h4><%= queryType.toUpperCase() %> matching '<%= queryString %>'</h4>
+                <h5><%= queryType.toUpperCase() %> matching '<%= queryString %>'</h5>
             <% } %>
         </div>
 
