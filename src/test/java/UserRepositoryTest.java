@@ -24,5 +24,4 @@ public class UserRepositoryTest {
         assertEquals(username, user.getUsername());
         assertEquals(password, user.getPassword());
     }
-
 }

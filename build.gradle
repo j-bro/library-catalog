@@ -89,3 +89,23 @@ task startContainer(type: DockerStartContainer) {
 task stopContainer(type: DockerStopContainer) {
     targetContainerId {createContainer.getContainerId() }
 }
+
+task srcZip(type: Zip) {
+    classifier = 'src'
+    from sourceSets*.allSource
+}
+
+task createSubmissionZip (type: Zip) {
+    dependsOn war
+
+    from ('.') {
+        include 'src/**'
+        include 'README.txt'
+    }
+
+    from('build/libs/') {
+        file war.getArchivePath()
+    }
+
+    archiveName 'A1_27515421.zip'
+}
